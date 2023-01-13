@@ -216,6 +216,8 @@ async function mainSlider(data){
         statusSlide[i].textContent = movie.status
         slide[i].classList.add(`${movie.slug}`)
         slide[i].addEventListener('click',()=>{
+            // remove bc when a slider starting to slide the CDNjs will auto add 1 more class
+            slide[i].classList.remove('swiper-slide-active')
             localStorage.setItem("slug", slide[i].className.split(' ')[1])
             window.location.href = 'movie.html'
         })

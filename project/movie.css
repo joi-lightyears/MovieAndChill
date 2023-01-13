@@ -162,3 +162,9 @@
 #play.open{
     display:  flex;
 }
+.category{
+    margin-left: 9px;
+}
+.summary p{
+    line-height: 18px;
+}
