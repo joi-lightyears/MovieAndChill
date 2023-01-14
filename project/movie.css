@@ -139,7 +139,7 @@
 /* video screen */
 #play{
     display: none;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     position: fixed;
     left: 0px;
@@ -149,8 +149,9 @@
     background-color: rgba(15, 15, 15, 0.7);
 }
 .play-movie{
-    width: 89%;
-    height: 90%;
+    width: 72%;
+    height: 80%;
+    margin-right: 20px;
 }
 .play-movie iframe{
     width: 100%;
@@ -167,4 +168,71 @@
 }
 .summary p{
     line-height: 18px;
+}
+.episodes{
+    width: 20%;
+    height: 90%;
+    background-color: #000000;
+    border-radius: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.search-episode{
+    background-color: rgb(139, 148, 161);
+    border-radius: 5px;
+    margin-top: 12px;
+    width: 90%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-input{
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    width: 80%;
+    outline: none;
+}
+.search-input::placeholder{
+    color: white;
+    display: flex;
+    text-align: center;
+}
+.episodes-container{
+    width: 100%;
+    height: 87%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.episodes-container::-webkit-scrollbar-track{
+    position: absolute;
+    background: #2e3338;
+    border-radius: 5px;
+}
+.episodes-container::-webkit-scrollbar{
+    width: 10px;
+}
+.episodes-container::-webkit-scrollbar-thumb{
+    background: #202225;
+    border-radius: 5px;
+}
+.ep{
+    width: 90%;
+    border-bottom: 1px solid #dfdfdf73;
+    padding: 10px 12px 10px 12px;
+    margin-left: 12px;
+    color: rgba(255, 255, 255, 0.658);
+    cursor: pointer;
+}
+.ep:hover{
+    background-color: #6b6b6b7e;
+    color: white;
 }
